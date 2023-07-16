@@ -1,0 +1,37 @@
+.topbar-section{
+    line-height: 58px;
+}
+.topbar-controller{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar-left{
+    font-size: 20px;
+    color: white;
+    display: none;
+
+    & svg{
+        cursor: pointer;
+    }
+}
+.topbar-right{
+    color: white;
+    margin-left: auto;
+    & p{
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media (max-width:767px){
+    .topbar-left{
+        display: flex;
+    }
+}
+
+@media (max-width:576px){
+    .topbar-right p{
+        font-size: 15px;
+    }
+}
